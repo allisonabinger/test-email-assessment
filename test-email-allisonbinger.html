@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="OSU College of Osteopathic Medicine Email Template"
+    />
+    <meta
+      name="keywords"
+      content="OSU, College of Osteopathic Medicine, Email Template"
+    />
+    <meta name="author" content="Allison Binger" />
+    <link rel="icon" type="image/x-icon" href="Assets/favicon-16x16.png" />
+    <title>OSU College of Osteophathic Medicine Email Template</title>
+    <style>
+      :root {
+        --osu-orange-color: #fe5c00;
+        --primary-color-black: #000000;
+        --primary-color-white: #ffffff;
+        --primary-color-grey: #dddddd;
+      }
+
+      body {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .view-toggle {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0px;
+      }
+      .page-title {
+        text-align: center;
+        width: 100%;
+      }
+
+      .toggle-instructions {
+        text-align: center;
+        max-width: 600px;
+        margin: 10px 0px;
+        font-size: 14px;
+      }
+
+      .email-template {
+        font-family: Arial, Helvetica, sans-serif;
+        height: auto;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0 0 0 2px var(--osu-orange-color);
+        margin: 20px 0 0 0;
+        padding: 0px;
+      }
+      .desktop-view {
+        max-width: 600px;
+      }
+
+      .mobile-view {
+        max-width: 400px;
+      }
+
+      .mobile-view {
+        display: none;
+      }
+
+      tr.content {
+        min-height: 200px;
+      }
+
+      .button {
+        color: var(--primary-color-black);
+        border: 2px solid var(--osu-orange-color);
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 4px 4px;
+        cursor: pointer;
+        border-radius: 4px;
+        background-color: transparent;
+      }
+
+      .button.active {
+        background-color: var(--osu-orange-color);
+        color: var(--primary-color-black);
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .email-template tbody {
+        padding: 0px;
+      }
+
+      .info-bar td {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .info-bar a {
+        text-decoration: none;
+        color: var(--primary-color-black);
+        font-size: 12px;
+        font-weight: bold;
+        padding: 0px;
+      }
+
+      .header td {
+        padding-bottom: 10px;
+      }
+
+      .header-logo {
+        max-height: 100px;
+        max-width: 100%;
+      }
+
+      .content-header {
+        font-weight: bold;
+        font-size: 25px;
+        color: var(--osu-orange-color);
+        margin: 10px;
+      }
+
+      .content p {
+        text-align: left;
+        padding: 0px 20px;
+      }
+
+      .content h3 {
+        text-align: left;
+        padding: 0px 20px;
+        color: var(--osu-orange-color);
+        margin-bottom: 6px;
+        font-size: 21px;
+      }
+
+      .content ul {
+        text-align: left;
+        margin: 0px 20px 0 10px;
+      }
+      .content li {
+        margin-bottom: 5px;
+      }
+
+      .ctas {
+        margin: 0px;
+      }
+
+      .ctas td {
+        display: flex;
+        flex-direction: column;
+        margin: 15px 20px;
+        gap: 20px;
+      }
+
+      .ctas a {
+        background-color: var(--primary-color-grey);
+        color: var(--primary-color-black);
+        padding: 15px 0px;
+        border: none;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      .ctas a {
+        text-decoration: none;
+        color: var(--primary-color-black);
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      .ctas a:hover {
+        background-color: var(--osu-orange-color);
+        color: var(--primary-color-white);
+      }
+
+      .social-links td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 70px;
+      }
+
+      .social-links img {
+        max-height: 26px;
+        max-width: 26px;
+      }
+
+      .footer img {
+        max-height: 45px;
+      }
+
+      .footer p {
+        text-wrap: none;
+        margin: 0px;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    
+    Hi, Elisabeth! Thank you for taking the time to look at my code. I hope this meets your expectations! -Allison Binger :) 
+    
+    -->
+    <h1 class="page-title">
+      OSU College of Osteopathic Medicine Email Template
+    </h1>
+    <!-- DESKTOP/MOBILE TOGGLE ------------------------------------>
+    <table class="view-toggle">
+      <tr>
+        <td>
+          <button
+            class="button active"
+            aria-pressed="true"
+            onclick="setActiveButton(this); document.querySelector('.desktop-view').style.display = 'block'; document.querySelector('.mobile-view').style.display = 'none';"
+          >
+            Desktop View
+          </button>
+        </td>
+        <td>
+          <button
+            class="button"
+            aria-pressed="false"
+            onclick="setActiveButton(this); document.querySelector('.desktop-view').style.display = 'none'; document.querySelector('.mobile-view').style.display = 'block';"
+          >
+            Mobile View
+          </button>
+        </td>
+      </tr>
+    </table>
+    <p class="toggle-instructions">
+      While this webpage is dynamic, and can be resized, toggle the
+      mobile/desktop button to preview the email on smaller screens.
+      <br />
+      <br />
+      <br />
+      To view this email template without this presentation, please
+      <a href="raw-template.html" class="email-link"
+        >click here to view the raw template</a
+      >.
+    </p>
+    <!-- EMAIL TEMPLATE - Desktop View ---------------------------->
+    <table class="email-template desktop-view">
+      <tr class="info-bar">
+        <td>
+          <a href="*" target="_blank" class="browser-view-link"
+            >View in Browser</a
+          >
+        </td>
+      </tr>
+      <tr class="header">
+        <td>
+          <img
+            src="Assets/osu-com-banner-v2.png"
+            alt="Logo of OSU College of
+          Osteopathic Medicine"
+            class="header-logo"
+            width="600"
+          />
+        </td>
+      </tr>
+      <tr class="hero-image">
+        <td>
+          <img
+            src="Assets/Pediatrics-clinic.png"
+            alt="Inside the clinic, an OSU Medicine pediatrics clinician and student are talking outside of a consult room."
+            class="peds-image"
+          />
+          <!-- Note: I was unaware how to label the individuals in this image, but it seemed right to give them descriptive titles like student and clinician. LMK what you think! -->
+        </td>
+      </tr>
+      <tr class="content">
+        <td>
+          <h2 class="content-header">Picture Yourself in Our White Coat</h2>
+          <p class="content-paragraph">
+            Dear ,
+            <br /><br />
+            Are you leaning toward a specialty in medicine? Whether you want to
+            practice family medicine or psychiatry, OSU Center for Health
+            Sciences and the Osteopathic Medical Education Consortium of
+            Oklahoma offer multiple accredited residency and fellowship
+            positions across Oklahoma.
+          </p>
+          <h3 class="content-subheader">Residency and Fellowship Facts</h3>
+          <ul class="content-list">
+            <li>
+              OSU-CHS offers 200+ accredited residency and fellowship positions.
+            </li>
+            <li>
+              OMECO, staffed by OSU-CHS Office of Graduate Medical Education,
+              offers 184 accredited residency positions.
+            </li>
+            <li>
+              In total, OSU and OMECO provide 461 residency positions in clinics
+              and hospitals throughout Oklahoma.
+            </li>
+            <li>
+              About 100 new residency positions will be added with the opening
+              of the Veterans Hospital in Tulsa and the Oklahoma Psychiatric
+              Care Center in the
+              <a href="*">OSU Academic Medical District</a> in 2026.
+            </li>
+          </ul>
+        </td>
+      </tr>
+      <tr class="ctas">
+        <td>
+          <a href="*">Future Students</a>
+          <a href="*"> Residency and Fellowship </a>
+        </td>
+      </tr>
+      <tr class="social-links">
+        <td>
+          <a href="*">
+            <img src="Assets/socials/facebook.svg" alt="Facebook logo" />
+          </a>
+          <a href="*">
+            <img src="Assets/socials/x.svg" alt="X(Formerly Twitter) logo" />
+          </a>
+          <a href="*">
+            <img src="Assets/socials/linkedin.svg" alt="LinkedIn logo" />
+          </a>
+          <a href="*">
+            <img src="Assets/socials/instagram.svg" alt="Instagram logo" />
+          </a>
+        </td>
+      </tr>
+      <tr class="divider">
+        <td>
+          <img src="Assets/persona-divider-decora.png" alt="Divider" />
+        </td>
+      </tr>
+      <tr class="footer">
+        <td>
+          <img
+            src="Assets/osu-medicine-side4c-new.png"
+            alt="OSU Medicine Logo"
+          />
+          <p>
+            Office of Enrollment Management
+            <br />
+            Oklahoma State University - Center for Health Sciences
+            <br />
+            1111 W. 17th Street | Tulsa, Oklahoma 74107
+          </p>
+        </td>
+      </tr>
+    </table>
+    <!-- EMAIL TEMPLATE - Mobile View ----------------------------->
+    <table class="email-template mobile-view">
+      <tr class="info-bar">
+        <td>
+          <a href="*" target="_blank" class="browser-view-link"
+            >View in Browser</a
+          >
+        </td>
+      </tr>
+      <tr class="header">
+        <td>
+          <img
+            src="Assets/osu-com-banner-v2.png"
+            alt="Logo of OSU College of
+          Osteopathic Medicine"
+            class="header-logo"
+          />
+        </td>
+      </tr>
+      <tr class="hero-image">
+        <td>
+          <img
+            src="Assets/Pediatrics-clinic.png"
+            alt="Inside the clinic, an OSU Medicine pediatrics clinician and student are talking outside of a consult room."
+            class="peds-image"
+          />
+        </td>
+      </tr>
+      <tr class="content">
+        <td>
+          <h2 class="content-header">Picture Yourself in Our White Coat</h2>
+          <p class="content-paragraph">
+            Dear ,
+            <br /><br />
+            Are you leaning toward a specialty in medicine? Whether you want to
+            practice family medicine or psychiatry, OSU Center for Health
+            Sciences and the Osteopathic Medical Education Consortium of
+            Oklahoma offer multiple accredited residency and fellowship
+            positions across Oklahoma.
+          </p>
+          <h3 class="content-subheader">Residency and Fellowship Facts</h3>
+          <ul class="content-list">
+            <li>
+              OSU-CHS offers 200+ accredited residency and fellowship positions.
+            </li>
+            <li>
+              OMECO, staffed by OSU-CHS Office of Graduate Medical Education,
+              offers 184 accredited residency positions.
+            </li>
+            <li>
+              In total, OSU and OMECO provide 461 residency positions in clinics
+              and hospitals throughout Oklahoma.
+            </li>
+            <li>
+              About 100 new residency positions will be added with the opening
+              of the Veterans Hospital in Tulsa and the Oklahoma Psychiatric
+              Care Center in the
+              <a href="*">OSU Academic Medical District</a> in 2026.
+            </li>
+          </ul>
+        </td>
+      </tr>
+      <tr class="ctas">
+        <td>
+          <a href="*">Future Students</a>
+          <a href="*"> Residency and Fellowship </a>
+        </td>
+      </tr>
+      <tr class="social-links">
+        <td>
+          <a href="*">
+            <img src="Assets/socials/facebook.svg" alt="Facebook logo" />
+          </a>
+          <a href="*">
+            <img src="Assets/socials/x.svg" alt="X(Formerly Twitter) logo" />
+          </a>
+          <a href="*">
+            <img src="Assets/socials/linkedin.svg" alt="LinkedIn logo" />
+          </a>
+          <a href="*">
+            <img src="Assets/socials/instagram.svg" alt="Instagram logo" />
+          </a>
+        </td>
+      </tr>
+      <tr class="divider">
+        <td>
+          <img src="Assets/persona-divider-decora.png" alt="Divider" />
+        </td>
+      </tr>
+      <tr class="footer">
+        <td>
+          <img
+            src="Assets/osu-medicine-side4c-new.png"
+            alt="OSU Medicine Logo"
+          />
+          <p>
+            Office of Enrollment Management
+            <br />
+            Oklahoma State University - Center for Health Sciences
+            <br />
+            1111 W. 17th Street | Tulsa, Oklahoma 74107
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p>
+      Border exists for aesthetic and visual boundary of template, it is not
+      included in the design.
+    </p>
+    <!-- JAVASCRIPT (Button Functionality) ------------------------>
+    <script>
+      function setActiveButton(button) {
+        document.querySelectorAll(".button").forEach((btn) => {
+          btn.classList.remove("active");
+          btn.setAttribute("aria-pressed", "false");
+        });
+        button.classList.add("active");
+        button.setAttribute("aria-pressed", "true");
+      }
+    </script>
+  </body>
+</html>
